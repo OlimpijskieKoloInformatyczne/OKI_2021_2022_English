@@ -1,4 +1,4 @@
-# English versions of projects created during lessons of Olympic Programming Group 2021/2022  
+<h1>English versions of projects created during lessons of Olympic Programming Group 2021/2022</h1>  
 [What is  Olympic Programming Group](https://youtu.be/5sM88CcBGd4): [https://youtu.be/5sM88CcBGd4](https://youtu.be/5sM88CcBGd4)  
 [Co to jest OKI?](https://youtu.be/su8Lxldt7AM): [https://youtu.be/su8Lxldt7AM](https://youtu.be/su8Lxldt7AM)  
 [Harmonogram zajęć/quizy](https://oki.org.pl/harmonogram-zajec/): [https://oki.org.pl/harmonogram-zajec/](https://oki.org.pl/harmonogram-zajec/)
