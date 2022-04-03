@@ -6,4 +6,6 @@ Harmonogram zajęć/quizy (polski): [https://oki.org.pl/harmonogram-zajec/](http
 <strong>mqueue - queue class in C++ that is the same as standard C++ library</strong>:  
 Link to mqueue class with example: [https://github.com/OlimpijskieKoloInformatyczne/OKI_2021_2022_English/blob/main/mqueue.cpp](https://github.com/OlimpijskieKoloInformatyczne/OKI_2021_2022_English/blob/main/mqueue.cpp)  
 Omówienie (polski): [https://youtu.be/b9Kvj81xIYk?t=1892](https://youtu.be/b9Kvj81xIYk?t=1892)  
-Link do zadania / kod / omówienie (polski): [https://oki.org.pl/kolejka/] (https://oki.org.pl/kolejka/)
+Link do zadania / kod / omówienie (polski): [https://oki.org.pl/kolejka/] (https://oki.org.pl/kolejka/)  
+
+
