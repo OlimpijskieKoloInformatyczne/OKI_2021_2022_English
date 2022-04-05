@@ -1,10 +1,11 @@
 /*
 //Class implementing print server in C++
 //Solution of task https://szkopul.edu.pl/problemset/problem/swy/site/
-//Version 1.1
+//Version 1.2
 Consists
 a. Program template
 b. switch/case
+c. Servicing d request (adding task)
 -
 Author: Daniel Olkowski / Olimpijskie Kolo Informatyczne
 What is OKI? https://youtu.be/5sM88CcBGd4
@@ -25,6 +26,12 @@ public:
     if (first == -1 ) 
         return true; 
     return false; 
+ }	
+
+ int size() {
+	if (first == -1 ) 
+        return 0;
+	return last - first + 1; 
  }	
 
  void push(int value) {
@@ -59,18 +66,25 @@ private:
 };	
 
 int main() {
+ mqueue printer;	
  char request;
- int number_of_requests, time;
- int i;
+ int number_of_requests, number_of_so_far_prints, total_print_time, average_print_time;
+ int expected_time, time, start_time, print_time, i;
+ int longest_print, longest_queue;
 
  cin >> number_of_requests; //9
 
+ longest_print = longest_queue = 0;
  for (i=1; i<=number_of_requests; ++i) {
     cin >> request; //s,  d,  g
     switch (request) {
        case 'd':
           cin >> time;
-     	  cout << "Request d\n";
+          printer.push(time);
+          longest_queue = max(longest_queue, printer.size());
+          expected_time = -1; 
+     	  cout << "Request accepted. You are number " << printer.size() << " in queue, ";
+     	  cout << " expected time is " <<  expected_time << " seconds. \n";
 		  break;	
        case 'g':
           cin >> time;
