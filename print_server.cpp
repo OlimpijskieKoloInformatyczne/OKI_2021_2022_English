@@ -1,12 +1,13 @@
 /*
 //Class implementing print server in C++
 //Solution of task https://szkopul.edu.pl/problemset/problem/swy/site/
-//Version 1.3
+//Version 1.4
 Consists
 a. Program template
 b. switch/case
 c. Servicing d request (adding task)
 d. Servicing g request (printer ready)
+e. Servicing s request (stats)
 -
 Author: Daniel Olkowski / Olimpijskie Kolo Informatyczne
 What is OKI? https://youtu.be/5sM88CcBGd4
@@ -53,7 +54,7 @@ public:
    if ( first == last) {
       value = elements[first];
       first = last = -1;
-	   elements.clear();
+      elements.clear();
 	  return value;
    }
    value = elements[first];
@@ -102,7 +103,8 @@ int main() {
      	  cout << "Printer is ready. Print time: " << print_time << " seconds.\n";	
 		  break;	
        case 's':
-     	  cout << "Request s\n";
+          cout << "Stats: Longest queue: " << longest_queue << ", longest waiting time: ";
+          cout << longest_print << " seconds.\n";	
 		  break;	
 	}
  }
