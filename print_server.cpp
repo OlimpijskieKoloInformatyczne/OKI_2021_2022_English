@@ -1,8 +1,11 @@
 /*
 //Class implementing print server in C++
-//Version 1.0
+//Solution of task https://szkopul.edu.pl/problemset/problem/swy/site/
+//Version 1.1
 Consists
-a. Program template 
+a. Program template
+b. switch/case
+-
 Author: Daniel Olkowski / Olimpijskie Kolo Informatyczne
 What is OKI? https://youtu.be/5sM88CcBGd4
 */
@@ -56,6 +59,29 @@ private:
 };	
 
 int main() {
+ char request;
+ int number_of_requests, time;
+ int i;
+
+ cin >> number_of_requests; //9
+
+ for (i=1; i<=number_of_requests; ++i) {
+    cin >> request; //s,  d,  g
+    switch (request) {
+       case 'd':
+          cin >> time;
+     	  cout << "Request d\n";
+		  break;	
+       case 'g':
+          cin >> time;
+     	  cout << "Request g\n";
+		  break;	
+       case 's':
+     	  cout << "Request s\n";
+		  break;	
+	}
+ }
+
 
  return 0;
 } 
